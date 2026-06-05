@@ -7,9 +7,22 @@ const PORT = parseInt(process.env.PORT || '3001', 10)
 app.use(cors())
 app.use(express.json({ limit: '50mb' }));
 
+// Pre-fetch FZ key on startup (for ASUS .fz encrypted files)
+let fzKeyReady = false
+async function ensureFzKey() {
+  if (fzKeyReady) return
+  try {
+    const { fzKeyStore } = await import('./store/fz-key-store.js')
+    await fzKeyStore.fetchKey()
+    fzKeyReady = true
+  } catch (e) {
+    console.warn('Could not pre-fetch FZ key:', e)
+  }
+}
+
 // Health check
 app.get('/api/health', (_req, res) => {
-  res.json({ status: 'ok', service: 'boardripper-api' })
+  res.json({ status: 'ok', service: 'boardripper-api', fzKeyReady })
 })
 
 // Parse board file from URL
@@ -20,6 +33,8 @@ app.post('/api/parse', async (req, res) => {
     if (!url) {
       return res.status(400).json({ error: 'url is required' })
     }
+
+    await ensureFzKey()
 
     // Dynamic import of parsers (AGPL-3.0 - from BoardRipper)
     const { parseBoardFile } = await import('./parsers/index.js')
@@ -51,6 +66,8 @@ app.post('/api/parse-raw', async (req, res) => {
       return res.status(400).json({ error: 'data (base64) is required' })
     }
 
+    await ensureFzKey()
+
     const { parseBoardFile } = await import('./parsers/index.js')
 
     const buffer = Buffer.from(data, 'base64')
@@ -65,4 +82,6 @@ app.post('/api/parse-raw', async (req, res) => {
 
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`BoardRipper API running on port ${PORT}`)
+  // Pre-fetch FZ key in background
+  ensureFzKey().catch(() => {})
 })
