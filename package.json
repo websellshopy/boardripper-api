@@ -12,10 +12,12 @@
   "dependencies": {
     "express": "^4.21.0",
     "cors": "^2.8.5",
+    "pako": "^2.1.0",
     "typescript": "^5.5.0",
     "tsx": "^4.19.0",
     "@types/express": "^4.17.21",
     "@types/cors": "^2.8.17",
-    "@types/node": "^22.0.0"
+    "@types/node": "^22.0.0",
+    "@types/pako": "^2.0.3"
   }
 }
