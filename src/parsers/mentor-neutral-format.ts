@@ -1,5 +1,5 @@
-import type { FormatDescriptor } from './registry';
-import { parseMentorNeutral } from './mentor-neutral-parser';
+import type { FormatDescriptor } from './registry.js';
+import { parseMentorNeutral } from './mentor-neutral-parser.js';
 
 const decoder = new TextDecoder('utf-8');
 

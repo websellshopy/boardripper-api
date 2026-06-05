@@ -1,5 +1,5 @@
-import type { FormatDescriptor } from './registry';
-import { parseAllegroBRD } from './allegro/allegro-brd-parser';
+import type { FormatDescriptor } from './registry.js';
+import { parseAllegroBRD } from './allegro/allegro-brd-parser.js';
 
 /**
  * Cadence Allegro BRD — binary PCB design format.

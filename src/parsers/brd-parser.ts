@@ -23,10 +23,10 @@
  * See docs/formats/BRD_FORMAT.md for the full specification.
  */
 
-import type { BoardData, Part, Pin, Nail, Point } from './types';
-import { computeBBox, buildNets, computePartGeometry } from './types';
-import { applyXMirrorInPlace } from './mirror-detect';
-import { log } from '../store/log-store';
+import type { BoardData, Part, Pin, Nail, Point } from './types.js';
+import { computeBBox, buildNets, computePartGeometry } from './types.js';
+import { applyXMirrorInPlace } from './mirror-detect.js';
+import { log } from '../store/log-store.js';
 
 // ---------------------------------------------------------------------------
 // Decoding

@@ -1,6 +1,7 @@
 {
   "name": "boardripper-api",
   "version": "1.0.0",
+  "type": "module",
   "description": "BoardRipper parser API service for Revolio",
   "private": true,
   "scripts": {

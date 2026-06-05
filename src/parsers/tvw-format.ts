@@ -1,5 +1,5 @@
-import type { FormatDescriptor } from './registry';
-import { parseTVW } from './tvw-parser';
+import type { FormatDescriptor } from './registry.js';
+import { parseTVW } from './tvw-parser.js';
 
 /**
  * TVW (Teboview) — binary PCB boardview format from Tebo-ICT.

@@ -12,9 +12,9 @@
  * Coordinates are in inches throughout; this parser multiplies by 1000 to
  * convert to mils (BoardRipper's internal unit).
  */
-import type { BoardData, Part, Pin, Nail, Point } from './types';
-import { computeBBox, buildNets, computePartGeometry } from './types';
-import { decodeBDVAsc } from './bdv-asc-decoder';
+import type { BoardData, Part, Pin, Nail, Point } from './types.js';
+import { computeBBox, buildNets, computePartGeometry } from './types.js';
+import { decodeBDVAsc } from './bdv-asc-decoder.js';
 
 const INCH_TO_MIL = 1000;
 

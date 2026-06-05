@@ -8,10 +8,10 @@
  * Fixed32 coordinates (raw / 100 = mils), position-dependent string cipher.
  */
 
-import type { BoardData, Part, Pin, Point, BBox, Nail, Trace, Via, SilkscreenPath, Pad } from './types';
-import { computeBBox, buildNets } from './types';
-import { log } from '../store/log-store';
-import { detectPositionOverlapRevisions } from './post-processing/detect-revisions';
+import type { BoardData, Part, Pin, Point, BBox, Nail, Trace, Via, SilkscreenPath, Pad } from './types.js';
+import { computeBBox, buildNets } from './types.js';
+import { log } from '../store/log-store.js';
+import { detectPositionOverlapRevisions } from './post-processing/detect-revisions.js';
 
 const textDecoder = new TextDecoder('utf-8');
 

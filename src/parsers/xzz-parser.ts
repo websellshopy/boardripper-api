@@ -1,6 +1,6 @@
-import type { BoardData, Part, Pin, Nail, Point, Trace } from './types';
-import { computeBBox, buildNets } from './types';
-import { log } from '../store/log-store';
+import type { BoardData, Part, Pin, Nail, Point, Trace } from './types.js';
+import { computeBBox, buildNets } from './types.js';
+import { log } from '../store/log-store.js';
 
 // =====================================================================
 // Fast DES (FIPS PUB 46-3) — Number-based, precomputed tables

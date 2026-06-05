@@ -1,5 +1,5 @@
-import type { FormatDescriptor } from './registry';
-import { parseBVR1 } from './bvr1-parser';
+import type { FormatDescriptor } from './registry.js';
+import { parseBVR1 } from './bvr1-parser.js';
 
 const decoder = new TextDecoder('utf-8');
 

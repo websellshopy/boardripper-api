@@ -1,6 +1,6 @@
-import type { FormatDescriptor } from './registry';
-import { parseFZ } from './fz-parser';
-import { getFzKey } from '../store/fz-key-store';
+import type { FormatDescriptor } from './registry.js';
+import { parseFZ } from './fz-parser.js';
+import { getFzKey } from '../store/fz-key-store.js';
 
 /**
  * FZ format detection: first 4 bytes are a header, bytes 4-5 should be

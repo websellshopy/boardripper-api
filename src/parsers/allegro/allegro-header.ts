@@ -6,9 +6,9 @@
  * TypeScript implementation is original code for BoardRipper.
  */
 
-import { AllegroStream } from './allegro-stream';
-import type { FileHeader, LinkedList } from './allegro-types';
-import { FmtVer, BoardUnits } from './allegro-types';
+import { AllegroStream } from './allegro-stream.js';
+import type { FileHeader, LinkedList } from './allegro-types.js';
+import { FmtVer, BoardUnits } from './allegro-types.js';
 
 // ── Version detection ────────────────────────────────────────────────────────
 

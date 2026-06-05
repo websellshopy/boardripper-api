@@ -36,7 +36,7 @@
  * any corner of the package without affecting the verdict.
  */
 
-import type { Part, Point, Nail, Trace, Via } from './types';
+import type { Part, Point, Nail, Trace, Via } from './types.js';
 
 export interface MirrorVerdict {
   /** True when topCW ratio and sample size both cross thresholds. */

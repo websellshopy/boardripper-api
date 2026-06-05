@@ -1,5 +1,5 @@
-import type { FormatDescriptor } from './registry';
-import { parseBDV } from './bdv-parser';
+import type { FormatDescriptor } from './registry.js';
+import { parseBDV } from './bdv-parser.js';
 
 /**
  * BDV — Plain-text boardview format (also distributed with .brd extension).

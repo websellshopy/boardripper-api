@@ -1,5 +1,5 @@
-import type { FormatDescriptor } from './registry';
-import { parseBRD } from './brd-parser';
+import type { FormatDescriptor } from './registry.js';
+import { parseBRD } from './brd-parser.js';
 
 // BRD magic: first 4 bytes of every obfuscated boardview file.
 const BRD_MAGIC = [0x23, 0xE2, 0x63, 0x28];

@@ -1,4 +1,4 @@
-import { Emitter } from './emitter';
+import { Emitter } from './emitter.js';
 
 export type LogLevel = 'log' | 'warn' | 'error';
 export type LogScope = 'parser' | 'render' | 'pdf' | 'scan' | 'ui' | 'cache' | 'perf' | 'update' | 'obd' | 'cloud' | 'twoWindow';

@@ -10,12 +10,12 @@
  * TypeScript implementation is original code for BoardRipper.
  */
 
-import { AllegroStream } from './allegro-stream';
-import { parseHeader } from './allegro-header';
-import { parseBlock } from './allegro-blocks';
-import type { FileHeader, AllegroBlock, LinkedList } from './allegro-types';
-import { FmtVer } from './allegro-types';
-import { log } from '../../store/log-store';
+import { AllegroStream } from './allegro-stream.js';
+import { parseHeader } from './allegro-header.js';
+import { parseBlock } from './allegro-blocks.js';
+import type { FileHeader, AllegroBlock, LinkedList } from './allegro-types.js';
+import { FmtVer } from './allegro-types.js';
+import { log } from '../../store/log-store.js';
 
 const dbg = log.parser;
 

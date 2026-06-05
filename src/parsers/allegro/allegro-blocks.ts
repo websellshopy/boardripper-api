@@ -9,7 +9,7 @@
  * TypeScript implementation is original code for BoardRipper.
  */
 
-import { AllegroStream } from './allegro-stream';
+import { AllegroStream } from './allegro-stream.js';
 import {
   FmtVer,
   readCond,
@@ -68,7 +68,7 @@ import {
   type Blk0x3AFilmListNode,
   type Blk0x3BProperty,
   type Blk0x3CKeyList,
-} from './allegro-types';
+} from './allegro-types.js';
 
 // ── Helper ───────────────────────────────────────────────────────────────────
 

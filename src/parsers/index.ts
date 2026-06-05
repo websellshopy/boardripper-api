@@ -1,16 +1,16 @@
-import type { BoardData } from './types';
-import { registerFormat, detectFormat, detectByExtension, getAllFormats } from './registry';
-import { BVR1Format } from './bvr1-format';
-import { BVR3Format } from './bvr3-format';
-import { BRDFormat } from './brd-format';
-import { FZFormat } from './fz-format';
-import { CADFormat } from './cad-format';
-import { MentorNeutralFormat } from './mentor-neutral-format';
-import { XZZFormat } from './xzz-format';
-import { TVWFormat } from './tvw-format';
-import { AllegroBRDFormat } from './allegro-brd-format';
-import { BDVFormat } from './bdv-format';
-import { BDVAscFormat } from './bdv-asc-format';
+import type { BoardData } from './types.js';
+import { registerFormat, detectFormat, detectByExtension, getAllFormats } from './registry.js';
+import { BVR1Format } from './bvr1-format.js';
+import { BVR3Format } from './bvr3-format.js';
+import { BRDFormat } from './brd-format.js';
+import { FZFormat } from './fz-format.js';
+import { CADFormat } from './cad-format.js';
+import { MentorNeutralFormat } from './mentor-neutral-format.js';
+import { XZZFormat } from './xzz-format.js';
+import { TVWFormat } from './tvw-format.js';
+import { AllegroBRDFormat } from './allegro-brd-format.js';
+import { BDVFormat } from './bdv-format.js';
+import { BDVAscFormat } from './bdv-asc-format.js';
 
 // Register all known formats in detection-priority order.
 // Content-based detection runs in this order; the first match wins.
@@ -26,11 +26,11 @@ registerFormat(CADFormat);
 registerFormat(XZZFormat);
 registerFormat(TVWFormat);
 
-export type { BoardData, BoardRevision, BomAlternateCluster, GhostComponent, Part, Pin, Net, Point, BBox, Pad, SilkscreenPath, Trace, Via } from './types';
-export { computeBBox, buildNets, bomReasonLabel } from './types';
-export type { FormatDescriptor, FormatId } from './registry';
-export { getFormat, getAllFormats, getAllExtensions, getFileExtension } from './registry';
-export { exportToBVR3 } from './export-bvr3';
+export type { BoardData, BoardRevision, BomAlternateCluster, GhostComponent, Part, Pin, Net, Point, BBox, Pad, SilkscreenPath, Trace, Via } from './types.js';
+export { computeBBox, buildNets, bomReasonLabel } from './types.js';
+export type { FormatDescriptor, FormatId } from './registry.js';
+export { getFormat, getAllFormats, getAllExtensions, getFileExtension } from './registry.js';
+export { exportToBVR3 } from './export-bvr3.js';
 
 export async function parseBoardFile(buffer: ArrayBuffer, fileName?: string): Promise<BoardData> {
   const header = new Uint8Array(buffer, 0, Math.min(512, buffer.byteLength));

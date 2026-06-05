@@ -1,5 +1,5 @@
-import type { FormatDescriptor } from './registry';
-import { parseBDVAsc } from './bdv-asc-parser';
+import type { FormatDescriptor } from './registry.js';
+import { parseBDVAsc } from './bdv-asc-parser.js';
 
 /**
  * BDV ASC — Honhan / Tebo-ICT obfuscated boardview.

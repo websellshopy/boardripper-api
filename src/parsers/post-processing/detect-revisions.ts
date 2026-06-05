@@ -100,9 +100,9 @@
  * code stays here so its scope is obvious.
  */
 
-import type { BoardData, BoardRevision, Part, BBox } from '../types';
-import { computeBBox, buildNets, detectGhostComponents } from '../types';
-import { log } from '../../store/log-store';
+import type { BoardData, BoardRevision, Part, BBox } from '../types.js';
+import { computeBBox, buildNets, detectGhostComponents } from '../types.js';
+import { log } from '../../store/log-store.js';
 
 /** Coarse spatial-index cell size (mils). Picks how widely we cast our
  *  net for candidate overlap pairs. 200 mils ~ 5 mm; one cell easily

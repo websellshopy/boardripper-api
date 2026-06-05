@@ -19,8 +19,8 @@
  */
 
 import { inflate, inflateRaw } from 'pako';
-import type { BoardData, Part, Pin, Nail, Point } from './types';
-import { computeBBox, buildNets, computePartGeometry, generateSyntheticOutline } from './types';
+import type { BoardData, Part, Pin, Nail, Point } from './types.js';
+import { computeBBox, buildNets, computePartGeometry, generateSyntheticOutline } from './types.js';
 
 const decoder = new TextDecoder('utf-8');
 

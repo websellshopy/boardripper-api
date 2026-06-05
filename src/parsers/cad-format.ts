@@ -1,5 +1,5 @@
-import type { FormatDescriptor } from './registry';
-import { parseCAD } from './cad-parser';
+import type { FormatDescriptor } from './registry.js';
+import { parseCAD } from './cad-parser.js';
 
 const decoder = new TextDecoder('utf-8');
 

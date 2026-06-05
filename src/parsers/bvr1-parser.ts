@@ -1,5 +1,5 @@
-import type { BoardData, Part, Pin, Nail, Point } from './types';
-import { computeBBox, buildNets } from './types';
+import type { BoardData, Part, Pin, Nail, Point } from './types.js';
+import { computeBBox, buildNets } from './types.js';
 
 export function parseBVR1(text: string): BoardData {
   const lines = text.split(/\r?\n/);

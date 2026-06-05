@@ -1,6 +1,6 @@
-import type { BoardData, Part, Pin, Point } from './types';
-import { computeBBox, buildNets, chainSegments } from './types';
-import { log } from '../store/log-store';
+import type { BoardData, Part, Pin, Point } from './types.js';
+import { computeBBox, buildNets, chainSegments } from './types.js';
+import { log } from '../store/log-store.js';
 
 /**
  * Pre-scan to detect whether PIN_ORIGIN values are relative to PART_ORIGIN

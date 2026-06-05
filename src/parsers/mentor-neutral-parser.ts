@@ -39,9 +39,9 @@
  * frames the board to within a few mils of the real edge.
  */
 
-import type { BoardData, Part, Pin, Nail, Point, Via } from './types';
-import { computeBBox, buildNets, detectGhostComponents, generateSyntheticOutline } from './types';
-import { log } from '../store/log-store';
+import type { BoardData, Part, Pin, Nail, Point, Via } from './types.js';
+import { computeBBox, buildNets, detectGhostComponents, generateSyntheticOutline } from './types.js';
+import { log } from '../store/log-store.js';
 
 const decoder = new TextDecoder('utf-8');
 

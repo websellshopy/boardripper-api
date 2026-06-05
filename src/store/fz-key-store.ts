@@ -1,6 +1,6 @@
-import { Emitter } from './emitter';
-import { validateFZKey } from '../parsers/fz-parser';
-import { log } from './log-store';
+import { Emitter } from './emitter.js';
+import { validateFZKey } from '../parsers/fz-parser.js';
+import { log } from './log-store.js';
 
 /**
  * Node.js-compatible FZ key store for the API service.

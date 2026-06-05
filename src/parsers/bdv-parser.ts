@@ -14,10 +14,10 @@
  * Coordinates are in mils (thousandths of an inch).
  */
 
-import type { BoardData, Part, Pin, Nail, Point } from './types';
-import { computeBBox, buildNets, generateSyntheticOutline } from './types';
-import { applyXMirrorInPlace } from './mirror-detect';
-import { log } from '../store/log-store';
+import type { BoardData, Part, Pin, Nail, Point } from './types.js';
+import { computeBBox, buildNets, generateSyntheticOutline } from './types.js';
+import { applyXMirrorInPlace } from './mirror-detect.js';
+import { log } from '../store/log-store.js';
 
 const decoder = new TextDecoder('utf-8');
 

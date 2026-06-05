@@ -6,9 +6,9 @@
  *   2. assembleBoard (DB → BoardData)
  */
 
-import type { BoardData } from '../types';
-import { AllegroDb } from './allegro-db';
-import { assembleBoard } from './allegro-assembler';
+import type { BoardData } from '../types.js';
+import { AllegroDb } from './allegro-db.js';
+import { assembleBoard } from './allegro-assembler.js';
 
 export function parseAllegroBRD(buffer: ArrayBuffer): BoardData {
   const db = new AllegroDb(buffer);

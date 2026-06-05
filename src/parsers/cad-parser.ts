@@ -16,10 +16,10 @@
  * Reference: GenCAD 1.4 specification, OpenBoardView GenCADFile.cpp
  */
 
-import type { BoardData, BoardRevision, Part, Pin, Nail, Point, Trace, Via } from './types';
-import { computeBBox, buildNets, computePartGeometry, generateSyntheticOutline, detectGhostComponents, detectBomAlternateClusters } from './types';
-import { detectXMirrorByPinDirection, applyXMirrorInPlace } from './mirror-detect';
-import { log } from '../store/log-store';
+import type { BoardData, BoardRevision, Part, Pin, Nail, Point, Trace, Via } from './types.js';
+import { computeBBox, buildNets, computePartGeometry, generateSyntheticOutline, detectGhostComponents, detectBomAlternateClusters } from './types.js';
+import { detectXMirrorByPinDirection, applyXMirrorInPlace } from './mirror-detect.js';
+import { log } from '../store/log-store.js';
 
 const decoder = new TextDecoder('utf-8');
 

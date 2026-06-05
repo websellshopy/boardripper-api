@@ -1,4 +1,4 @@
-import type { BoardData } from './types';
+import type { BoardData } from './types.js';
 
 /**
  * Export any BoardData as a BVRAW_FORMAT_3 text file.

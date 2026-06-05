@@ -13,10 +13,10 @@
  * TypeScript implementation is original code for BoardRipper.
  */
 
-import type { BoardData, Net, Pad, PadShape, Part, Pin, Point, SilkscreenPath, Trace, Via } from '../types';
-import { computeBBox, buildNets } from '../types';
-import { AllegroDb } from './allegro-db';
-import { BoardUnits, FmtVer, LayerClass } from './allegro-types';
+import type { BoardData, Net, Pad, PadShape, Part, Pin, Point, SilkscreenPath, Trace, Via } from '../types.js';
+import { computeBBox, buildNets } from '../types.js';
+import { AllegroDb } from './allegro-db.js';
+import { BoardUnits, FmtVer, LayerClass } from './allegro-types.js';
 import type {
   Blk0x04NetAssign,
   Blk0x05Track,
@@ -35,8 +35,8 @@ import type {
   Blk0x2DFootprintInst,
   Blk0x32PlacedPad,
   Blk0x33Via,
-} from './allegro-types';
-import { log } from '../../store/log-store';
+} from './allegro-types.js';
+import { log } from '../../store/log-store.js';
 
 const dbg = log.parser;
 

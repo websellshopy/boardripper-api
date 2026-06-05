@@ -1,5 +1,5 @@
-import type { FormatDescriptor } from './registry';
-import { parseXZZ, isPadsBinaryHeader } from './xzz-parser';
+import type { FormatDescriptor } from './registry.js';
+import { parseXZZ, isPadsBinaryHeader } from './xzz-parser.js';
 
 /** XZZ magic string */
 const XZZ_MAGIC = 'XZZPCB';

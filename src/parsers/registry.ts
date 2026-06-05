@@ -1,4 +1,4 @@
-import type { BoardData } from './types';
+import type { BoardData } from './types.js';
 
 export type FormatId = string;
 
